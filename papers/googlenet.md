@@ -87,6 +87,7 @@ you can see extensive use of 1x1 conv layer. here main purpose of 1x1 filter is 
 #### final convolution neural network
 ![final network](http://homes.cs.washington.edu/~jmschr/lectures/googlenet.png)
 
+[ethereon visualization](http://ethereon.github.io/netscope/#/preset/googlenet)
 #### Resources
 1. http://wikicoursenote.com/wiki/GoingDeeperWithConvolutions
 2. http://iamaaditya.github.io/2016/03/one-by-one-convolution/
