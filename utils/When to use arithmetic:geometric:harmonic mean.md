@@ -10,9 +10,9 @@ The basic idea of mean is the number that represent set of number, and produces 
 
 Example: 
 1. lets consider `n` instances we travel a fixed time `t` at velocities v1, v2, v3, .., vn over distance d1, d2, d3,..., dn. Now we want distance covered. Suppose we want to find out what is velocity I should travel for given time `t` for `n` instance so that I will conver same distance as by travelling v1 to vn velocity. That can be calculated by arithematic mean
-
+```
 arithmatic mean v = (v1 + v2 + ... + vn) / n
-
+```
 2. consider another example where one company's profile grow over last three year by 10 millions, 12 millions and 14 millions. Then we can say we can company's average profite grow is 12 millions every year.
 
 So the additive structure we are trying to maintain is proportional to the measurements we have, so we use arithmetic mean
