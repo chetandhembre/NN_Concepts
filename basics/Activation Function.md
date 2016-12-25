@@ -26,6 +26,12 @@ h1 = σ(z) = z
 
 ![Identity Function](http://i.stack.imgur.com/NKESX.png)
 
+##### Derivative 
+```
+σ'(z) = 1
+```
+
+
 #### Step Function
 
 following equaction says it all
@@ -34,10 +40,20 @@ following equaction says it all
               - 0 if z < 0 
              / 
 h1 = σ(z) = -
-             \_ 1 if z > 0  
+             \_ 1 if z >= 0  
 ```
 
 ![step functiokn](http://i.stack.imgur.com/vRdzT.png)
+
+##### Derivative 
+```
+
+         /- 0 for x != 0
+σ'(z) = -
+         \_ undefined for x = 0
+
+```
+
 
 #### Sigmoid
 
@@ -47,6 +63,12 @@ h1 = σ(z) = 1 / (1 + e ^ (-z))
 
 ![Sigmoid1]
 (http://cs231n.github.io/assets/nn1/sigmoid.jpeg)
+
+##### Derivative 
+```
+σ'(z) = σ(z)(1 - σ(z))
+```
+
 
 from above graph it is created that any output from previous layer will get squashes between 0 and 1.
 It is nice progress from `step function` which define if neuron will fire or not. Sigmoid function gives little sense of non linearity. 
@@ -62,6 +84,12 @@ h1 = σ(z) = tanh(z)
 ``` 
 ![Tanh](http://cs231n.github.io/assets/nn1/tanh.jpeg)
 
+##### Derivative 
+
+```
+σ'(z) = (1 - σ(z)^2)
+```
+
 as graph suggest tanh squashes input between -1 and 1. It solves `non zero centered ouput` issue thats why we preferred `tanh` over `sigmoid`.
 tanh is simply scaled sigmoid neuron
 ```
@@ -76,6 +104,16 @@ the activation simply threshold at zero
 
 ![Relu](http://cs231n.github.io/assets/nn1/relu.jpeg)
 
+##### Derivative 
+
+```
+
+         /- 0 if z < 0
+σ'(z) = -
+         \- z if z >= 0
+
+```
+
 1. It greatly accelerate the convergence of SGD compare to sigmoid/tanh
 2. Relu can be implemented by simply thresholding a matrix of activation at zero compare to more expensive operation of sigmoid/tanh
 
@@ -88,15 +126,26 @@ So be careful!!
 
 #### Leaky Relu
 ```  
-              _ az for x < 0
+              _ az for z < 0
              /
 h1 = σ(z) = -
-             \_ x for x > 0
+             \_ z for z > 0
              
         
 where a is small constant (0.01)
 ```
 ![Leaky Relu](http://lamda.nju.edu.cn/weixs/project/CNNTricks/imgs/leaky.png)
+
+
+##### Derivative 
+
+```
+
+         /- a if z < 0
+σ'(z) = -
+         \- z if z >= 0
+
+```
 
 it just tring to avoid dying neuron problem by instead of making all negative o/p to zero but mapping to very small negative value
 
@@ -144,6 +193,37 @@ because
 Use the ReLU non-linearity, be careful with your learning rates and possibly monitor the fraction of “dead” units in a network. If this concerns you, give Leaky ReLU or Maxout a try. Never use sigmoid. Try tanh, but expect it to work worse than ReLU/Maxout.
 ```
 
+**Desire property of activation function** ([source](https://en.wikipedia.org/wiki/Activation_function))
+
+#####1. Nonlinear: 
+
+nonlinearity help you model more complex problem. with only two layer of nonlinear activation function we can have universal approximator. [Identiy function](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#identity-function) is linear function. so even we created multiple layer NN with identity function as activation function it will be same as single layer model
+
+#####2. Continuously differentiable:
+during gradient base backprop we take derivative of output of activation function to pass gradient. So non contunous function do not have derivatives. The [binary step activation function](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#step-function) is not differentiable at 0, and it differentiates to 0 for all other values, so gradient-based methods can make no progress with it.
+
+#####3. Range:
+When the range of the activation function is finite, gradient-based training methods tend to be more stable, because pattern presentations significantly affect only limited weights. When the range is infinite, training is generally more efficient because pattern presentations significantly affect most of the weights. In the latter case, smaller learning rates are typically necessary.
+
+#####4. Monotonic:
+When the activation function is [monotonic](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/monotonic%20function.md), the error surface associated with a single-layer model is guaranteed to be convex.
+
+#####5. Smooth:
+Functions with a Monotonic derivative have been shown to generalize better in some cases. The argument for these properties suggests that such activation functions are more consistent with Occam's razor
+(do not understand what it means)
+
+#####6. Approximates identity near the origin:
+When activation functions have this property, the neural network will learn efficiently when its weights are initialized with small random values. When the activation function does not approximate identity near the origin, special care must be used when initializing the weights.Activation functions where `f(0)=0` and `f'(0)=1` and `f'` is continuous at 0.
 
 
 
+| Name        | Non Linear | Continuously differentiable |  range | Monotonic | Approximates identity near the origin |
+|:------:	    | :---------:| :--------------------------:| :-----:| :--------:| :-----------------------------------: |
+|[Identity Function](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#identity-function)| :x: | :heavy_check_mark:| ( -∞, +∞ ) |  :heavy_check_mark: | :heavy_check_mark:|
+|[Step Function](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#step-function)| :heavy_check_mark:| :x: | ( 0, 1 ) |  :heavy_check_mark: | :x:|
+|[Sigmoid](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#sigmoid)| :heavy_check_mark:| :heavy_check_mark: | ( 0, 1 ) |  :heavy_check_mark: | :x:|
+|[Tanh](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#tanh)| :heavy_check_mark:| :heavy_check_mark: | ( -1, 1 ) |  :heavy_check_mark: | : heavy_check_mark:|
+|[Relu](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#relu)| :heavy_check_mark:| :heavy_check_mark: | [ 0,  ∞) |  :heavy_check_mark: | :x:|
+|[Leaky Relu](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#leaky-relu)| :heavy_check_mark:| :heavy_check_mark: | ( -∞,  ∞) |  :heavy_check_mark: | :x:|
+|[Maxout](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#maxout)| :no_mouth:  | :no_mouth: | :no_mouth: |  :no_mouth: | :no_mouth: |
+|[Softmax](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#softmax)| :no_mouth:  | :no_mouth: | :no_mouth: |  :no_mouth: | :no_mouth: |
