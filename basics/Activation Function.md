@@ -222,7 +222,7 @@ When activation functions have this property, the neural network will learn effi
 |[Identity Function](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#identity-function)| :x: | :heavy_check_mark:| ( -∞, +∞ ) |  :heavy_check_mark: | :heavy_check_mark:|
 |[Step Function](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#step-function)| :heavy_check_mark:| :x: | ( 0, 1 ) |  :heavy_check_mark: | :x:|
 |[Sigmoid](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#sigmoid)| :heavy_check_mark:| :heavy_check_mark: | ( 0, 1 ) |  :heavy_check_mark: | :x:|
-|[Tanh](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#tanh)| :heavy_check_mark:| :heavy_check_mark: | ( -1, 1 ) |  :heavy_check_mark: | : heavy_check_mark:|
+|[Tanh](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#tanh)| :heavy_check_mark:| :heavy_check_mark: | ( -1, 1 ) |  :heavy_check_mark: | :heavy_check_mark:|
 |[Relu](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#relu)| :heavy_check_mark:| :heavy_check_mark: | [ 0,  ∞) |  :heavy_check_mark: | :x:|
 |[Leaky Relu](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#leaky-relu)| :heavy_check_mark:| :heavy_check_mark: | ( -∞,  ∞) |  :heavy_check_mark: | :x:|
 |[Maxout](https://github.com/chetandhembre/NN_Concepts/blob/master/basics/Activation%20Function.md#maxout)| :no_mouth:  | :no_mouth: | :no_mouth: |  :no_mouth: | :no_mouth: |
