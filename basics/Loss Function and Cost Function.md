@@ -112,12 +112,11 @@ loss function is (y1 - y) which tell you error in your function f(x)
 - softmax loss
 - svm loss
 
- #### When to use what?
- 
- - binary classification problem (SVM) - hinge/e - insensitive Loss
- - regresion problem (real number output)- square/absolute/mse
- - probability distribution with target has only one output [0, 1, 0, 0] - cross entropy (softmax function)
- - target is probability distribution - KL divergence
+#### When to use what?
+- binary classification problem (SVM) - hinge/e - insensitive Loss
+- regresion problem (real number output)- square/absolute/mse
+- probability distribution with target has only one output [0, 1, 0, 0] - cross entropy (softmax function)
+- target is probability distribution - KL divergence
       
       		
   		
