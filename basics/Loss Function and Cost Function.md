@@ -108,7 +108,10 @@ loss function is (y1 - y) which tell you error in your function f(x)
   - KL(p || q) != KL(q || p) i.e. not symmetric
   - when target p is fixed then cross entropy and KL divergence values are same
   
-  
+#### TODOS
+- softmax loss
+- svm loss
+
  #### When to use what?
  
  - binary classification problem (SVM) - hinge/e - insensitive Loss
