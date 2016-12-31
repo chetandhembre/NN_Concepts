@@ -24,7 +24,6 @@ This folder contrain all basic knowledge require to learn and solve machine lear
 	- [Lasso Regression](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Lasso%20Regression.md)
 	- [Ridge Regression](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/ridge%20regression.md)
 - [Residual Mapping](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/residual_mppings.md)
-
 - [Sampling](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Sampling%20With%20Replacement%20and%20Sampling%20Without%20Replacement.md)
 - [Shortcut connections](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/shortcut_connections.md)
 - [Statistical Invariance](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/statistical_invariance.md)
