@@ -1,0 +1,31 @@
+This folder contrain all basic knowledge require to learn and solve machine learning problems. It is not bounded 
+
+- [1 x 1 convolution layer](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/1x1_convolutions.md)
+- [Asymptotically] (https://github.com/chetandhembre/NN_Concepts/blob/master/utils/asymptotically.md)
+- [Bias Variance Tradeoff](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/bias%20variance%20tradeoff.md)
+- [Bootstrap](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/statistical%20Bootstrap.md)
+	- [BootStrap Aggregation (Bagging)](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Bootstrap%20Aggregation(bagging).md)
+- [Chain Rule](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/chain_rule.md)
+- [Derivative](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/derivative_intuiation.md)
+- Distribution
+	- [Binomial Probability Distribution](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Binomial%20Probability%20Distribution.md)
+	- [Poisson Distribution](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/poisson%20distribution.md)
+	- [Difference between Binomial and Poisson Distribution](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/difference%20between%20binomial%20and%20poisson%20distribution.md)
+- [Fundamental Calculus Theorm](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/fundamental_theorm_calculus.md)
+- [Identity Mapping](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/identity_mapping.md)
+- [Integration](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/integration_intuition)
+- [Monotonic Function](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/monotonic%20function.md)
+- Mean
+	- [Arithmatic Mean](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Arithmatic%20mean.md)
+	- [Geomatric Mean](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/geometric%20mean.md)
+	- [Harmonic Mean](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/harmonic%20mean.md)
+	- [Which mean to choose?](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/When%20to%20use%20arithmetic:geometric:harmonic%20mean.md)
+- [Regression](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/regression.md)
+	- [Lasso Regression](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Lasso%20Regression.md)
+	- [Ridge Regression](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/ridge%20regression.md)
+- [Residual Mapping](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/residual_mppings.md)
+
+- [Sampling](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Sampling%20With%20Replacement%20and%20Sampling%20Without%20Replacement.md)
+- [Shortcut connections](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/shortcut_connections.md)
+- [Statistical Invariance](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/statistical_invariance.md)
+- [Vector Norm](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Vector%20Norm.md)
