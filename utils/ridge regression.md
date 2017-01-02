@@ -11,7 +11,7 @@ Overfitting occures when you have very `High Variance Error`. explained [here](h
 ridge regression use L2 [vector norm](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Vector%20Norm.md)
 
 ```
-c = pow(sum(pow(Xi, 2)), 2)
+c = sum(pow(Xi, 2))
 ```
 
 Basic idea is to avoid exploiding weights i.e. (x1, x2, .. , xn). If we allowed them to grow without constrain it will overfit to given sample training data.

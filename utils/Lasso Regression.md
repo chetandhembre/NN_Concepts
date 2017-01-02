@@ -44,3 +44,5 @@ from above graph it is clear that cost function touches at corner of diamond bec
 - lasso regression do not have simple formula to calculate like ridge regression. You can to use program to find out.
 
 
+#### Reference
+- [youtube](https://www.youtube.com/watch?v=5asL5Eq2x0A)
