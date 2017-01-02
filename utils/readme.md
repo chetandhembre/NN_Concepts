@@ -20,6 +20,7 @@ This folder contrain all basic knowledge require to learn and solve machine lear
 	- [Geomatric Mean](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/geometric%20mean.md)
 	- [Harmonic Mean](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/harmonic%20mean.md)
 	- [Which mean to choose?](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/When%20to%20use%20arithmetic:geometric:harmonic%20mean.md)
+- [Overfitting and Underfitting](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Overfiting%20and%20Underfiting.md)
 - [Regression](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/regression.md)
 	- [Lasso Regression](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Lasso%20Regression.md)
 	- [Ridge Regression](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/ridge%20regression.md)
