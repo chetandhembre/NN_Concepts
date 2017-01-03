@@ -6,6 +6,7 @@ This folder contrain all basic knowledge require to learn and solve machine lear
 - [Bootstrap](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/statistical%20Bootstrap.md)
 	- [BootStrap Aggregation (Bagging)](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Bootstrap%20Aggregation(bagging).md)
 - [Chain Rule](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/chain_rule.md)
+- [Convex and Concave function](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Convex%20and%20Concave%20function.md)
 - [Derivative](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/derivative_intuiation.md)
 - Distribution
 	- [Binomial Probability Distribution](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Binomial%20Probability%20Distribution.md)
