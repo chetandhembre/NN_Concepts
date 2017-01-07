@@ -90,11 +90,13 @@ There different ways to do gradient descent depending on efficiency and time of 
 ![high learning rate](http://www.turingfinance.com/wp-content/uploads/2014/05/High-Learning-Rate1.gif)
 
 - Small learning rate means, we will take lot of time to reach minima.
+
 ![low learning rate](https://wingshore.files.wordpress.com/2014/11/alpha1.png)
 
 from above image it is clear that, with small learning rate we take very small step even we know we are going to steepest direction.
 
 - Here is summary of `effect of learning rate`
+
 ![learnign rate effect](http://cs231n.github.io/assets/nn3/learningrates.jpeg)
 
 
