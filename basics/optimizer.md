@@ -281,7 +281,7 @@ above gif showing how various gradient descent algorithm behave on [`saddle poin
 If our data is sparse then we can use `Adagrad`, `Adadelta` or `RMPprop`, among these three I will prefer to use `RMPprop` as it works in mini batch as well as It's learning rate does not decrease as drastacaly as 	`Adadelta`.
 `Adam` provide us speed of `Moementum` and learning rate anneling for `RMSprop`, So it is better choice than others.
 
-***Adam is very good choose for optimizer***
+***Adam is very good choice for optimizer***
 
 
 
