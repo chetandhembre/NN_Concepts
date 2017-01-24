@@ -1,3 +1,5 @@
+#loss Graph https://dl.dropboxusercontent.com/u/47591917/xor_loss.png
+
 import numpy as np
 import matplotlib
 from matplotlib import pyplot as plt
@@ -18,18 +20,14 @@ b1 = np.random.randn(3, 1)
 w2 = np.random.randn(3, 2)
 b2 = np.random.randn(2, 1)
 
-print w1
-print b1
-print w2
-print b2
-def my_softmax(x, y):
+def softmax(x, y):
   probs = np.exp(x - np.max(x, axis=0))
   probs /= np.sum(probs)
   loss = -np.sum(np.log(probs[y]))
   return loss
 
 
-def grad(x, y):
+def softmax_grad(x, y):
   probs = np.exp(x - np.max(x, axis=0))
   probs /= np.sum(probs)
   probs[y] -= 1
@@ -43,10 +41,11 @@ def sigmoid_prime(z):
     """Derivative of the sigmoid function."""
     return sigmoid(z)*(1-sigmoid(z))
 
-input_sequence = np.random.randint(4, size=50000)
+input_sequence = np.random.randint(4, size=200000)
 i = 0
 
 loss = []
+loss_record = []
 x1 = []
 x2 = []
 h1_0 = []
@@ -71,9 +70,10 @@ while i < len(input_sequence):
   h2 = np.transpose(w2).dot(h1_sig) + b2
 
   #loss
-  loss.append(my_softmax(h2, _output))
+  loss.append(softmax(h2, _output))
   if i % 1000 == 0:
     print loss[-1]
+    loss_record.append(loss[-1])
     x1.append(_input[0][0])
     x2.append(_input[1][0])
     h1_0.append(h1[0][0])
@@ -81,7 +81,7 @@ while i < len(input_sequence):
     h1_2.append(h1[2][0])
     output.append(np.max(h2))
 
-  dscore = grad(h2, _output)
+  dscore = softmax_grad(h2, _output)
 
   # backpropagation
   # input 2x1, 3x1
@@ -142,6 +142,8 @@ while i < len(input_sequence):
     colors.append(_output[0][0])
   i = i + 1
 
-plt.plot(loss)
-plt.ylabel('some numbers')
+plt.plot(loss_record)
+plt.ylabel('Loss')
+plt.xlabel('Iterations (sampled per 1000 interation)')
+plt.savefig('xor_loss.png')
 plt.show()
