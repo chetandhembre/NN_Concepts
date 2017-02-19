@@ -45,7 +45,7 @@ Equation of PRelu can be given as following
 ```
 
          /- zi   if z > 0
-σ'(z) = -
+σ(zi) = -
          \- aizi if z <= 0
 
 ```
@@ -84,6 +84,24 @@ A weight decay tends to push ai to zero, and thus biases PReLU toward ReLU.
 Even without regularization, the learned coefficients rarely have a magnitude
 larger than 1 in our experiments.
 ```
+
+#### BackPropagation
+```
+
+         /- aizi   if z <= 0
+σ'(zi) = -
+         \- zi if z > 0
+
+```
+
+#### Gradient with respect to a (dE / dai)
+```
+                 - 0  if zi > 0 
+   df(zi)      / 
+---------- = -
+   dai         \_  zi  if zi <=0
+```
+
 
 ###2. Theoritical initialization for PRELU
 
