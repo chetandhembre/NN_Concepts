@@ -151,6 +151,9 @@ it just tring to avoid dying neuron problem by instead of making all negative o/
 
 results are not consistent with this method
 
+#### PRelu
+explained [here](https://github.com/chetandhembre/NN_Concepts/blob/master/papers/Delving%20Deep%20into%20Rectifiers-%20Surpassing%20Human-Level%20Performance%20on%20ImageNet%20Classification.md#1-prelu)
+
 
 #### Maxout
 ```
