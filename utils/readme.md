@@ -12,6 +12,7 @@ This folder contrain all basic knowledge require to learn and solve machine lear
 	- [Binomial Probability Distribution](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Binomial%20Probability%20Distribution.md)
 	- [Poisson Distribution](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/poisson%20distribution.md)
 	- [Difference between Binomial and Poisson Distribution](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/difference%20between%20binomial%20and%20poisson%20distribution.md)
+- [Expected Value](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/Expected%20Value.md)	
 - [Fundamental Calculus Theorm](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/fundamental_theorm_calculus.md)
 - [Identity Mapping](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/identity_mapping.md)
 - [Integration](https://github.com/chetandhembre/NN_Concepts/blob/master/utils/integration_intuition)
